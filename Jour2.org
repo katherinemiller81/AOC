@@ -5,7 +5,7 @@ Bien que l' usine de fusion/fission nucléaire du Renne au nez rouge ne semble c
 
 Ils s'empressent d'ajouter que, puisque vous êtes déjà là, ils apprécieraient vraiment votre aide pour analyser certaines données inhabituelles du réacteur au nez rouge. Vous vous retournez pour vérifier si les historiens vous attendent, mais ils semblent déjà s'être divisés en groupes qui fouillent actuellement tous les recoins de l'installation. Vous proposez de les aider à analyser les données inhabituelles.
 
-Les données inhabituelles (votre entrée de puzzle) se composent de plusieurs rapports , un rapport par ligne. Chaque rapport est une liste de nombres appelés niveaux , séparés par des espaces. Par exemple :
+Les données inhabituelles (votre entrée de puzzle) se composent de plusieurs rapports , un rapport par ligne. Chaque rapport est une liste de nombres appelés niveaux , séparés par des espaces. Par exemple : 
 
 7 6 4 2 1
 1 2 7 8 9
