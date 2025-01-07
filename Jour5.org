@@ -1,0 +1,74 @@
+--- Jour 5 : File d'attente d'impression ---
+Satisfait de ses recherches sur Cérès, l'escadron de savants propose de parcourir ensuite les piles de papeterie du sous-sol 17.
+
+Le département d'impression du pôle Nord est plus occupé que jamais à l'approche de Noël, et tandis que les historiens continuent leurs recherches dans cette installation d'importance historique, un elfe qui exploite une imprimante très familière vous fait signe.
+
+L'elfe doit vous reconnaître, car il ne perd pas de temps à vous expliquer que les mises à jour du nouveau manuel de sécurité pour le lancement du traîneau ne s'imprimeront pas correctement. Ne pas mettre à jour les manuels de sécurité serait vraiment désastreux, alors vous proposez vos services.
+
+Les protocoles de sécurité indiquent clairement que les nouvelles pages des manuels de sécurité doivent être imprimées dans un ordre très précis . Cette notation X|Ysignifie que si le numéro de page Xet le numéro de page Ydoivent tous deux être produits dans le cadre d'une mise à jour, le numéro de page X doit être imprimé à un moment donné avant le numéro de page Y.
+
+L'elfe a pour vous à la fois les règles d'ordre des pages et les pages à produire à chaque mise à jour (votre entrée de puzzle), mais ne peut pas déterminer si chaque mise à jour a les pages dans le bon ordre.
+
+Par exemple:
+
+47|53
+97|13
+97|61
+97|47
+75|29
+61|13
+75|53
+29|13
+97|29
+53|29
+61|53
+97|53
+61|29
+47|13
+75|47
+97|75
+47|61
+75|61
+47|29
+75|13
+53|13
+
+75,47,61,53,29
+97,61,53,29,13
+75,29,13
+75,97,47,61,53
+61,13,29
+97,13,75,29,47
+La première section spécifie les règles d'ordre des pages , une par ligne. La première règle, 47|53, signifie que si une mise à jour inclut à la fois la page numéro 47 et la page numéro 53, alors la page numéro 47 doit être imprimée à un moment donné avant la page numéro 53. (47 ne doit pas nécessairement être immédiatement avant la page 53 ; d'autres pages peuvent être entre elles.)
+
+La deuxième section précise les numéros de page de chaque mise à jour . Étant donné que la plupart des manuels de sécurité sont différents, les pages nécessaires aux mises à jour sont également différentes. La première mise à jour, 75,47,61,53,29, signifie que la mise à jour comprend les numéros de page 75, 47, 61, 53 et 29.
+
+Pour que les imprimantes fonctionnent le plus rapidement possible, commencez par identifier les mises à jour qui sont déjà dans le bon ordre .
+
+Dans l'exemple ci-dessus, la première mise à jour ( 75,47,61,53,29) est dans le bon ordre :
+
+75est correctement premier car il existe des règles qui placent chaque autre page après elle : 75|47, 75|61, 75|53et 75|29.
+47est correctement deuxième car 75 doit être avant ( 75|47) et chaque autre page doit être après selon 47|61, 47|53et 47|29.
+61est correctement au milieu car 75 et 47 sont avant lui ( 75|61et 47|61) et 53 et 29 sont après lui ( 61|53et 61|29).
+53est correctement quatrième car il se trouve avant la page numéro 29 ( 53|29).
+29c'est la seule page restante et donc correctement la dernière.
+Étant donné que la première mise à jour n’inclut pas certains numéros de page, les règles de classement impliquant ces numéros de page manquants sont ignorées.
+
+Les deuxième et troisième mises à jour sont également dans le bon ordre selon les règles. Comme la première mise à jour, elles n'incluent pas non plus tous les numéros de page, et donc seules certaines des règles de classement s'appliquent - dans chaque mise à jour, les règles de classement impliquant des numéros de page manquants ne sont pas utilisées.
+
+La quatrième mise à jour, 75,97,47,61,53, n'est pas dans le bon ordre : elle imprimerait 75 avant 97, ce qui viole la règle 97|75.
+
+La cinquième mise à jour, 61,13,29, n'est pas non plus dans le bon ordre, car elle enfreint la règle 29|13.
+
+La dernière mise à jour, 97,13,75,29,47, n'est pas dans le bon ordre en raison de la violation de plusieurs règles.
+
+Pour une raison inconnue, les elfes ont également besoin de connaître le numéro de la page centrale de chaque mise à jour imprimée. Étant donné que vous n'imprimez actuellement que les mises à jour correctement ordonnées, vous devrez trouver le numéro de la page centrale de chaque mise à jour correctement ordonnée. Dans l'exemple ci-dessus, les mises à jour correctement ordonnées sont :
+
+75,47,61,53,29
+97,61,53,29,13
+75,29,13
+Les numéros de page intermédiaires sont respectivement 61, 53et 29. L'addition de ces numéros de page donne 143.
+
+Bien sûr, vous devrez être prudent : la liste réelle des règles d'ordre des pages est plus longue et plus compliquée que l'exemple ci-dessus.
+
+Déterminez quelles mises à jour sont déjà dans le bon ordre. Qu'obtenez-vous si vous additionnez les numéros de page du milieu de ces mises à jour correctement ordonnées ?
