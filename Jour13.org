@@ -1,4 +1,4 @@
---- Jour 13 : L'engin à griffes ---
+*** Jour 13 : L'engin à griffes ***
 Ensuite, le hall d'un complexe hôtelier sur une île tropicale. Les historiens prennent un moment pour admirer le carrelage hexagonal du sol avant de se disperser.
 
 Heureusement, il semblerait que la station dispose d'une nouvelle salle d'arcade ! Peut-être pourrez-vous gagner des prix grâce aux machines à pinces ?
@@ -44,3 +44,28 @@ Ainsi, le maximum de prix que vous pourriez éventuellement gagner est de deux ;
 Vous estimez qu'il ne faudrait pas appuyer plus de 100fois sur chaque bouton pour gagner un prix. Sinon, comment quelqu'un pourrait-il jouer ?
 
 Déterminez comment gagner autant de prix que possible. Quel est le nombre minimum de jetons que vous devez dépenser pour gagner tous les prix possibles ?
+
+
+** Deuxième partie **
+Alors que vous êtes sur le point de remporter le premier prix, vous découvrez que la griffe est loin d'être là où vous l'espériez. En raison d'une erreur de conversion d'unité dans vos mesures, la position de chaque prix est en fait 10000000000000plus haute sur les axes 1 Xet Y2 !
+
+Ajoutez 10000000000000à la position Xet Yde chaque prix. Après avoir effectué cette modification, l'exemple ci-dessus ressemblerait désormais à ceci :
+
+Button A: X+94, Y+34
+Button B: X+22, Y+67
+Prize: X=10000000008400, Y=10000000005400
+
+Button A: X+26, Y+66
+Button B: X+67, Y+21
+Prize: X=10000000012748, Y=10000000012176
+
+Button A: X+17, Y+86
+Button B: X+84, Y+37
+Prize: X=10000000007870, Y=10000000006450
+
+Button A: X+69, Y+23
+Button B: X+27, Y+71
+Prize: X=10000000018641, Y=10000000010279
+Désormais, il n'est possible de gagner un prix que sur les machines à 2 et 4 griffes. Malheureusement, il faudra bien plus que 100quelques clics pour y parvenir.
+
+En utilisant les coordonnées de prix corrigées, déterminez comment gagner autant de prix que possible. Quel est le nombre minimum de jetons que vous devriez dépenser pour gagner tous les prix possibles ?
