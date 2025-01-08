@@ -1,4 +1,4 @@
---- Jour 2 : Rapports au nez rouge ---
+*** Jour 2 : Rapports au nez rouge ***
 Heureusement, le premier endroit que les historiens veulent rechercher n'est pas à une longue distance à pied du bureau de l'historien en chef. 
 
 Bien que l' usine de fusion/fission nucléaire du Renne au nez rouge ne semble contenir aucun signe de l'historien en chef, les ingénieurs qui s'y trouvent courent vers vous dès qu'ils vous voient. Apparemment, ils parlent encore de l'époque où Rudolph a été sauvé par synthèse moléculaire à partir d'un seul électron.
@@ -30,3 +30,23 @@ Dans l'exemple ci-dessus, les rapports peuvent être jugés sûrs ou non sûrs e
 Donc, dans cet exemple, 2les rapports sont sécurisés .
 
 Analysez les données inhabituelles fournies par les ingénieurs. Combien de rapports sont sûrs ?
+
+
+** Deuxième partie **
+Les ingénieurs sont surpris par le faible nombre de rapports de sécurité jusqu'à ce qu'ils réalisent qu'ils ont oublié de vous parler de l' amortisseur de problèmes .
+
+Le Problem Dampener est un module monté sur le réacteur qui permet aux systèmes de sécurité du réacteur de tolérer un seul niveau défectueux dans ce qui serait autrement un rapport sûr. C'est comme si le niveau défectueux n'était jamais arrivé !
+
+Désormais, les mêmes règles s'appliquent qu'avant, sauf que si la suppression d'un seul niveau d'un rapport non sécurisé le rendrait sûr, le rapport est alors considéré comme sûr.
+
+D'autres rapports de l'exemple ci-dessus sont désormais sécurisés :
+
+7 6 4 2 1: Sécuritaire sans supprimer aucun niveau.
+1 2 7 8 9: Dangereux quel que soit le niveau supprimé.
+9 7 6 2 1: Dangereux quel que soit le niveau supprimé.
+1 3 2 4 5: Sécurisé en supprimant le deuxième niveau, 3.
+8 6 4 4 1: Sécurisé en supprimant le troisième niveau, 4.
+1 3 6 7 9: Sécuritaire sans supprimer aucun niveau.
+Grâce au Problem Dampener, 4les rapports sont réellement sécurisés !
+
+Mettez à jour votre analyse en gérant les situations dans lesquelles l'amortisseur de problèmes peut supprimer un seul niveau des rapports non sécurisés. Combien de rapports sont désormais sécurisés ?
