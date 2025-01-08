@@ -1,4 +1,4 @@
---- Jour 7 : Réparation du pont ---
+*** Jour 7 : Réparation du pont ***
 Les historiens vous emmènent vers un pont de corde familier au-dessus d'une rivière au milieu d'une jungle. Le chef n'est pas de ce côté du pont, mais peut-être est-il de l'autre côté ?
 
 Lorsque vous vous apprêtez à traverser le pont, vous remarquez un groupe d'ingénieurs qui tentent de le réparer. (Apparemment, il tombe en panne assez fréquemment.) Vous ne pourrez pas traverser tant qu'il ne sera pas réparé.
@@ -28,3 +28,18 @@ Seules trois des équations ci-dessus peuvent être rendues vraies en insérant 
 Les ingénieurs ont simplement besoin du résultat total de l'étalonnage , qui est la somme des valeurs de test des seules équations qui pourraient être vraies. Dans l'exemple ci-dessus, la somme des valeurs de test pour les trois équations répertoriées ci-dessus est 3749.
 
 Déterminer quelles équations pourraient être vraies. Quel est leur résultat d'étalonnage total ?
+
+
+** Deuxième partie **
+Les ingénieurs semblent inquiets : le résultat d'étalonnage total que vous leur avez donné est loin d'être dans les limites de sécurité. C'est alors que vous repérez votre erreur : des éléphants bien cachés détiennent un troisième type d'opérateur .
+
+L' opérateur de concaténation|| ( ) combine les chiffres de ses entrées gauche et droite en un seul nombre. Par exemple, 12 || 345deviendrait 12345. Tous les opérateurs sont toujours évalués de gauche à droite.
+
+Maintenant, en plus des trois équations qui pourraient être rendues vraies en utilisant uniquement l'addition et la multiplication, l'exemple ci-dessus comporte trois autres équations qui peuvent être rendues vraies en insérant des opérateurs :
+
+156: 15 6peut être rendu vrai par une seule concaténation : 15 || 6 = 156.
+7290: 6 8 6 15peut être rendu vrai en utilisant 6 * 8 || 6 * 15.
+192: 17 8 14peut être rendu vrai en utilisant 17 || 8 + 14.
+L'addition des six valeurs de test (les trois qui pouvaient être réalisées auparavant en utilisant uniquement +et *plus les trois nouvelles qui peuvent maintenant être réalisées en utilisant également ||) produit le nouveau résultat d'étalonnage total de 11387.
+
+En utilisant vos nouvelles connaissances sur les cachettes des éléphants, déterminez quelles équations pourraient être vraies. Quel est leur résultat d'étalonnage total ?
