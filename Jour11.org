@@ -1,4 +1,4 @@
---- Jour 11 : Galets plutoniens ---
+*** Jour 11 : Galets plutoniens ***
 L'ancienne civilisation de Pluton était connue pour sa capacité à manipuler l'espace-temps, et tandis que les Historiens explorent leurs couloirs infinis, vous avez remarqué un étrange ensemble de pierres défiant la physique.
 
 À première vue, elles ressemblent à des pierres normales : elles sont disposées sur une ligne parfaitement droite et chaque pierre porte un numéro gravé dessus.
@@ -50,3 +50,9 @@ After 6 blinks:
 Dans cet exemple, après avoir cligné des yeux six fois, vous auriez 22des calculs. Après avoir cligné des yeux 25 fois, vous auriez 55312des calculs !
 
 Considérez la disposition des pierres devant vous. Combien de pierres aurez-vous après avoir cligné des yeux 25 fois ?
+
+
+** Deuxième partie **
+Les historiens prennent vraiment beaucoup de temps. Pour être honnête, les couloirs infinis sont très larges.
+
+Combien de calculs auriez-vous après avoir cligné des yeux un total de 75 fois ?
