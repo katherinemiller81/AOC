@@ -1,4 +1,4 @@
---- Jour 6 : Garde Gallivant ---
+*** Jour 6 : Garde Gallivant ***
 Les historiens utilisent à nouveau leur appareil sophistiqué , cette fois pour vous emmener tous au laboratoire de fabrication du prototype de combinaison du pôle Nord... en l'an 1518 ! Il s'avère qu'avoir un accès direct à l'histoire est très pratique pour un groupe d'historiens.
 
 Il faudra néanmoins faire attention aux paradoxes temporels, et il sera donc important d'éviter toute personne de 1518 pendant que les historiens recherchent le chef. Malheureusement, un seul garde patrouille dans cette partie du laboratoire.
@@ -86,3 +86,92 @@ En prédisant l'itinéraire du garde, vous pouvez déterminer quelles positions 
 Dans cet exemple, le garde visitera 41des positions distinctes sur votre carte.
 
 Prévoyez le chemin du garde. Combien de positions distinctes le garde visitera-t-il avant de quitter la zone cartographiée ?
+
+
+** Deuxième partie **
+Alors que les historiens commencent à travailler sur l'itinéraire de patrouille des gardes, vous empruntez leur appareil sophistiqué et sortez du laboratoire. Depuis la sécurité d'un placard de fournitures, vous voyagez dans le temps à travers les derniers mois et enregistrez l'état nocturne du poste de garde du laboratoire sur les murs du placard.
+
+De retour après ce qui semble n'être que quelques secondes auprès des Historiens, ils expliquent que la zone de patrouille des gardes est tout simplement trop grande pour qu'ils puissent fouiller le laboratoire en toute sécurité sans se faire prendre.
+
+Heureusement, ils sont presque certains que l'ajout d'un seul nouvel obstacle ne provoquera pas de paradoxe temporel. Ils aimeraient placer le nouvel obstacle de telle manière que le garde se retrouve coincé dans une boucle , ce qui rendrait le reste du laboratoire sûr pour la recherche.
+
+Pour réduire au minimum les risques de créer un paradoxe temporel, les historiens aimeraient connaître toutes les positions possibles pour une telle obstruction. La nouvelle obstruction ne peut pas être placée à la position de départ du garde - le garde est là en ce moment et le remarquerait.
+
+Dans l'exemple ci-dessus, il n'y a que 6différentes positions où une nouvelle obstruction entraînerait le blocage du garde dans une boucle. Les diagrammes de ces six situations servent Oà marquer la nouvelle obstruction, |à montrer une position où le garde se déplace vers le haut/bas, -à montrer une position où le garde se déplace vers la gauche/droite et +à montrer une position où le garde se déplace à la fois vers le haut/bas et vers la gauche/droite.
+
+Option 1, placer une presse à imprimer à côté de la position de départ du garde :
+
+....#.....
+....+---+#
+....|...|.
+..#.|...|.
+....|..#|.
+....|...|.
+.#.O^---+.
+........#.
+#.........
+......#...
+Option deux, placez une pile de prototypes de combinaisons défaillantes dans le quadrant inférieur droit de la zone cartographiée :
+
+
+....#.....
+....+---+#
+....|...|.
+..#.|...|.
+..+-+-+#|.
+..|.|.|.|.
+.#+-^-+-+.
+......O.#.
+#.........
+......#...
+Option trois, placez une caisse de tissu prototype compressé à côté du bureau debout dans le quadrant inférieur droit :
+
+....#.....
+....+---+#
+....|...|.
+..#.|...|.
+..+-+-+#|.
+..|.|.|.|.
+.#+-^-+-+.
+.+----+O#.
+#+----+...
+......#...
+Option quatre, placez un rétroencabulateur alchimique près du coin inférieur gauche :
+
+....#.....
+....+---+#
+....|...|.
+..#.|...|.
+..+-+-+#|.
+..|.|.|.|.
+.#+-^-+-+.
+..|...|.#.
+#O+---+...
+......#...
+Option cinq, placez plutôt le rétroencabulateur alchimique un peu à droite :
+
+....#.....
+....+---+#
+....|...|.
+..#.|...|.
+..+-+-+#|.
+..|.|.|.|.
+.#+-^-+-+.
+....|.|.#.
+#..O+-+...
+......#...
+Option six, placez un réservoir de colle souveraine juste à côté du réservoir de solvant universel :
+
+....#.....
+....+---+#
+....|...|.
+..#.|...|.
+..+-+-+#|.
+..|.|.|.|.
+.#+-^-+-+.
+.+----++#.
+#+----++..
+......#O..
+Peu importe ce que vous choisissez d'utiliser comme obstacle tant que vous et les Historiens pouvez le mettre en place sans que le garde ne s'en aperçoive. L'important est d'avoir suffisamment d'options pour pouvoir en trouver une qui minimise les paradoxes temporels, et dans cet exemple, il existe 6différentes positions que vous pouvez choisir.
+
+Vous devez bloquer la garde dans une boucle en ajoutant une seule nouvelle obstruction. Combien de positions différentes pourriez-vous choisir pour cette obstruction ?
