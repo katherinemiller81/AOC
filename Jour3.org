@@ -1,4 +1,4 @@
---- Jour 3 : Réfléchissons-y ---
+*** Jour 3 : Réfléchissons-y ***
 « Nos ordinateurs ont des problèmes, donc je ne sais pas si nous avons des historiens en chef en stock ! Vous pouvez cependant vérifier l'entrepôt », dit le commerçant légèrement énervé du magasin de location de toboggans du pôle Nord . Les historiens se dirigent vers l'entrepôt pour y jeter un œil.
 
 Le commerçant se tourne vers vous. « Est-ce que vous comprenez pourquoi nos ordinateurs ont encore des problèmes ? »
@@ -15,3 +15,22 @@ xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))
 Seules les quatre sections mises en surbrillance sont de véritables mulinstructions. L'addition du résultat de chaque instruction produit 161( 2*4 + 5*5 + 11*8 + 8*5).
 
 Analysez la mémoire corrompue à la recherche muld'instructions non corrompues. Qu'obtenez-vous si vous additionnez tous les résultats des multiplications ?
+
+
+** Deuxième partie **
+En parcourant la mémoire corrompue, vous remarquez que certaines des instructions conditionnelles sont également intactes. Si vous traitez certaines des instructions conditionnelles non corrompues dans le programme, vous pourrez peut-être obtenir un résultat encore plus précis.
+
+Il y a deux nouvelles instructions que vous devrez gérer :
+
+L' do()instruction permet des instructions futures mul.
+L' don't()instruction désactive les instructions futures mul.
+Seules les instructions les plus récentes s'appliquent. Au début du programme, les instructions sont activées .do()don't()mul
+
+Par exemple:
+
+xmul(2,4)&mul[3,7]!^don't()_mul(5,5)+mul(32,64](mul(11,8)undo()?mul(8,5))
+Cette mémoire corrompue est similaire à l'exemple précédent, mais cette fois les instructions mul(5,5)et mul(11,8)sont désactivées car il y a une don't()instruction avant elles. Les autres mulinstructions fonctionnent normalement, y compris celle à la fin qui est réactivée par une do()instruction.
+
+Cette fois, la somme des résultats est 48( 2*4 + 8*5).
+
+Gérez les nouvelles instructions ; qu'obtenez-vous si vous additionnez tous les résultats des multiplications activées ?
