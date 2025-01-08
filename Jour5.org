@@ -1,4 +1,4 @@
---- Jour 5 : File d'attente d'impression ---
+*** Jour 5 : File d'attente d'impression ***
 Satisfait de ses recherches sur Cérès, l'escadron de savants propose de parcourir ensuite les piles de papeterie du sous-sol 17.
 
 Le département d'impression du pôle Nord est plus occupé que jamais à l'approche de Noël, et tandis que les historiens continuent leurs recherches dans cette installation d'importance historique, un elfe qui exploite une imprimante très familière vous fait signe.
@@ -72,3 +72,16 @@ Les numéros de page intermédiaires sont respectivement 61, 53et 29. L'addition
 Bien sûr, vous devrez être prudent : la liste réelle des règles d'ordre des pages est plus longue et plus compliquée que l'exemple ci-dessus.
 
 Déterminez quelles mises à jour sont déjà dans le bon ordre. Qu'obtenez-vous si vous additionnez les numéros de page du milieu de ces mises à jour correctement ordonnées ?
+
+
+** Deuxième partie **
+Pendant que les elfes se mettent au travail pour imprimer les mises à jour correctement ordonnées, vous avez un peu de temps pour réparer le reste.
+
+Pour chacune des mises à jour mal ordonnées , utilisez les règles de classement des pages pour placer les numéros de page dans le bon ordre. Pour l'exemple ci-dessus, voici les trois mises à jour mal ordonnées et leur classement correct :
+
+75,97,47,61,53devient .97,75,47,61,53
+61,13,29devient .61,29,13
+97,13,75,29,47devient .97,75,47,29,13
+Après avoir pris uniquement les mises à jour mal ordonnées et les avoir ordonnées correctement, leurs numéros de page du milieu sont 47, 29et 47. En les additionnant, on obtient 123.
+
+Recherchez les mises à jour qui ne sont pas dans le bon ordre. Qu'obtenez-vous si vous additionnez les numéros de page du milieu après avoir ordonné correctement uniquement ces mises à jour ?
