@@ -38,16 +38,16 @@ Pour trouver la distance totale entre la liste de gauche et la liste de droite, 
 Vos listes de gauche et de droite contiennent de nombreux identifiants d'emplacement. Quelle est la distance totale entre vos listes ?
 
 
-** Part Two **
-Your analysis only confirmed what everyone feared: the two lists of location IDs are indeed very different.
+** Deuxième partie **
+Votre analyse n'a fait que confirmer ce que tout le monde craignait : les deux listes d'identifiants de localisation sont en effet très différentes.
 
-Or are they?
+Ou le sont-ils ?
 
-The Historians can't agree on which group made the mistakes or how to read most of the Chief's handwriting, but in the commotion you notice an interesting detail: a lot of location IDs appear in both lists! Maybe the other numbers aren't location IDs at all but rather misinterpreted handwriting.
+Les historiens ne parviennent pas à se mettre d'accord sur le groupe qui a commis les erreurs ou sur la façon de déchiffrer la plupart des écritures du chef, mais dans le tumulte, on remarque un détail intéressant : de nombreux identifiants de lieux apparaissent dans les deux listes ! Peut-être que les autres numéros ne sont pas du tout des identifiants de lieux mais plutôt une écriture mal interprétée.
 
-This time, you'll need to figure out exactly how often each number from the left list appears in the right list. Calculate a total similarity score by adding up each number in the left list after multiplying it by the number of times that number appears in the right list.
+Cette fois, vous devrez déterminer exactement à quelle fréquence chaque numéro de la liste de gauche apparaît dans la liste de droite. Calculez un score de similarité total en additionnant chaque numéro de la liste de gauche après l'avoir multiplié par le nombre de fois que ce numéro apparaît dans la liste de droite.
 
-Here are the same example lists again:
+Voici à nouveau les mêmes exemples de listes :
 
 3   4
 4   3
@@ -55,14 +55,14 @@ Here are the same example lists again:
 1   3
 3   9
 3   3
-For these example lists, here is the process of finding the similarity score:
+Pour ces exemples de listes, voici le processus de recherche du score de similarité :
 
-The first number in the left list is 3. It appears in the right list three times, so the similarity score increases by 3 * 3 = 9.
-The second number in the left list is 4. It appears in the right list once, so the similarity score increases by 4 * 1 = 4.
-The third number in the left list is 2. It does not appear in the right list, so the similarity score does not increase (2 * 0 = 0).
-The fourth number, 1, also does not appear in the right list.
-The fifth number, 3, appears in the right list three times; the similarity score increases by 9.
-The last number, 3, appears in the right list three times; the similarity score again increases by 9.
-So, for these example lists, the similarity score at the end of this process is 31 (9 + 4 + 0 + 0 + 9 + 9).
+Le premier nombre de la liste de gauche est 3. Il apparaît trois fois dans la liste de droite, donc le score de similarité augmente de .3 * 3 = 9
+Le deuxième nombre dans la liste de gauche est 4. Il apparaît une fois dans la liste de droite, donc le score de similarité augmente de .4 * 1 = 4
+Le troisième nombre dans la liste de gauche est 2. Il n'apparaît pas dans la liste de droite, donc le score de similarité n'augmente pas ( 2 * 0 = 0).
+Le quatrième numéro, 1, n'apparaît pas non plus dans la liste de droite.
+Le cinquième numéro, 3, apparaît trois fois dans la liste de droite ; le score de similarité augmente de 9.
+Le dernier numéro, 3, apparaît trois fois dans la liste de droite ; le score de similarité augmente à nouveau de 9.
+Ainsi, pour ces listes d’exemples, le score de similarité à la fin de ce processus est 31( 9 + 4 + 0 + 0 + 9 + 9).
 
-Once again consider your left and right lists. What is their similarity score?
+Considérez à nouveau vos listes de gauche et de droite. Quel est leur score de similarité ?
