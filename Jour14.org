@@ -1,4 +1,4 @@
---- Jour 14 : Redoubt des toilettes ---
+*** Jour 14 : Redoubt des toilettes ***
 L'un des historiens a besoin d'aller aux toilettes ; heureusement, vous savez qu'il y a des toilettes près d'un endroit non visité sur leur liste, et vous êtes donc tous rapidement téléportés directement dans le hall du siège d'Easter Bunny.
 
 Malheureusement, EBHQ semble avoir « amélioré » la sécurité des toilettes après votre dernière visite . La zone à l'extérieur des toilettes grouille de robots !
@@ -112,3 +112,9 @@ Pour déterminer la zone la plus sûre, comptez le nombre de robots dans chaque 
 Dans cet exemple, les quadrants contiennent 1, 3, 4et 1robot. En les multipliant ensemble, on obtient un facteur de sécurité total de 12.
 
 Prévoyez le mouvement des robots de votre liste dans un espace dont 101la largeur et 103la hauteur sont égales à 100 carreaux. Quel sera le facteur de sécurité après 100 secondes exactement ?
+
+
+** Deuxième partie **
+Pendant la pause toilettes, quelqu'un remarque que ces robots ressemblent terriblement à ceux construits et utilisés au pôle Nord. S'ils sont du même type, ils devraient avoir un œuf de Pâques codé en dur : très rarement, la plupart des robots devraient s'organiser pour former une image d'arbre de Noël .
+
+Quel est le plus petit nombre de secondes qui doivent s'écouler pour que les robots affichent l'œuf de Pâques ?
